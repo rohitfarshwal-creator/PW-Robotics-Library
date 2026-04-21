@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM + Hardware Resource Library</title>
+    <style>
+        /* Modern Background & Typography */
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        /* Glassmorphism Container */
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-header h1 {
+            font-size: 26px;
+            margin: 0 0 5px 0;
+            color: #2c3e50;
+        }
+
+        .profile-header p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        /* Tree Hierarchy / Accordion Styling */
+        details {
+            margin-bottom: 15px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        /* The Main Category Button */
+        summary {
+            padding: 18px 20px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none; /* Hides default triangle */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 5px solid #6c5ce7;
+            user-select: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary:hover {
+            background-color: #f8f9fa;
+        }
+
+        /* Custom Dropdown Arrow */
+        summary::after {
+            content: '▼';
+            font-size: 14px;
+            color: #6c5ce7;
+            transition: transform 0.3s;
+        }
+
+        details[open] summary::after {
+            transform: rotate(180deg);
+        }
+
+        details[open] {
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+        }
+
+        /* Nested Accordion for Sub-folders */
+        .nested-accordion {
+            margin: 10px 15px 15px 15px;
+            box-shadow: none;
+            border: 1px solid #f1f2f6;
+            background-color: #fafafa;
+        }
+
+        .nested-accordion summary {
+            font-size: 16px;
+            padding: 12px 15px;
+            border-left: 4px solid #a29bfe;
+            background-color: transparent;
+        }
+
+        .nested-accordion .link-item {
+            padding-left: 30px;
+            font-size: 14px;
+        }
+
+        .nested-accordion .link-item:hover {
+            padding-left: 35px;
+        }
+
+        /* The Sub-links */
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #4a4a4a;
+            border-top: 1px solid #f1f2f6;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .link-item:hover {
+            background-color: #fcfcfc;
+            color: #6c5ce7;
+            padding-left: 25px; /* Slight indent on hover */
+        }
+        
+        .icon {
+            margin-right: 12px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile-header">
+        <h1>📚 PW Academy-Stem-HardwareRepository </h1>
+        <p>Centralized Resource Directory</p>
+    </div>
+
+    <details style="border-left-color: #fdcb6e;">
+        <summary style="border-left-color: #fdcb6e;">📖 PW Academy(PPT + Brochure)</summary>
+        <a href="https://drive.google.com/file/d/1gvsDSgKTviLeuLvvbKItmRYqEMveYYFc/view?usp=sharing" class="link-item"><span class="icon">📖</span> Combined Brochure(Academy + Panel)</a>
+        <a href="https://canva.link/cbd12rcplcrriys" class="link-item"><span class="icon">📖</span> PPT</a>
+         <a href="https://drive.google.com/file/d/1CT12-rP9hJnMMo7L26rURBXmbiJ39rSn/view?usp=sharing" class="link-item"><span class="icon">📰</span> Brochure</a>
+         <a href="https://curiouslabs.vercel.app/proposals/stem" class="link-item"><span class="icon">📰</span> Doc And Proposal Generator Link</a>
+
+    </details>
+
+    <details>
+        <summary>🔬 STEM Lab</summary>
+        <a href="https://www.canva.com/design/DAGq6K8Tze0/kUXkYCEDM7cViqyWMFRo3w/view?utm_content=DAGq6K8Tze0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h821d39df37#23" class="link-item"><span class="icon">📄</span> Curious Lab PPT</a>
+        <a href="https://drive.google.com/file/d/1VepsQ9HbKChjVUmtEdDwdXu43gM1061o/view?usp=sharing" class="link-item"><span class="icon">📰</span> Brochure</a>
+        <a href="https://drive.google.com/file/d/1rNumQaPInZproDCXZN0aetOlnA7eQI6w/view?usp=sharing" class="link-item"><span class="icon">🎬</span> Video</a>
+        <a href="https://drive.google.com/file/d/1VxA1mzGZ4M8FRyCUY0jF-MtJSFp1Z04f/view?usp=sharing" class="link-item"><span class="icon">📖</span> Catalogue Booklet</a>
+        <a href="https://drive.google.com/file/d/16RSuAzhgkcmkJ2MuISidqX0cXFFzhC22/view?usp=sharing" class="link-item"><span class="icon">📖</span> Grade Wise STEM Projects</a>
+        <a href="https://docs.google.com/document/d/1YGEe6YCtRxZ7aNkigvFS7STrqriWR85kuD-F6c4Jh2E/edit?usp=drive_link" class="link-item"><span class="icon">📖</span> Lab Sales Manual</a>
+
+
+        <details class="nested-accordion">
+            <summary>🎬 Project Explanatory Videos</summary>
+            <a href="https://drive.google.com/file/d/15x63rSGGYQU_HMrgofQk1IRrjz1Mmjx-/view?usp=sharing" class="link-item"><span class="icon">🎬</span> Video 1</a>
+            <a href="https://drive.google.com/file/d/16_hWt-jBGcDU6TwDPRslaBll50d15mbo/view?usp=sharing" class="link-item"><span class="icon">🎬</span> Video 2</a>
+            <a href="https://drive.google.com/file/d/1rXIOnHDIcDJtHB0cXhCEnZ4iPOu4TfeB/view?usp=sharing" class="link-item"><span class="icon">🎬</span> Video 3</a>
+            <a href="https://drive.google.com/file/d/1umxBgsxLv0CPghSHTYiz3q6VUCLib-Et/view?usp=sharing" class="link-item"><span class="icon">🎬</span> Video 4</a>
+            <a href="https://drive.google.com/file/d/1A2P8vBl3dsKZB18qfp6Uis2xC5ijFxLn/view?usp=sharing" class="link-item"><span class="icon">🎬</span> Video 5</a>
+            <a href="https://drive.google.com/file/d/1JdFMGWJwFhxHt8-3I-lDb5Fw7R_RUQDh/view?usp=sharing" class="link-item"><span class="icon">🎬</span> Video 6</a>
+            <a href="https://drive.google.com/file/d/1VNlsghQrdpbIcYW-J15ZQ5trYz8ItQq3/view?usp=sharing" class="link-item"><span class="icon">🎬</span> Video 7</a>
+            <a href="https://drive.google.com/file/d/1gOFIkKf3vY6dKJLxHMZy6GAaCMQKzgv5/view?usp=sharing" class="link-item"><span class="icon">🎬</span> Video 8</a>
+            <a href="https://drive.google.com/file/d/1QdAEecplD6hFvk_0fcFKGGakY-sYQk-e/view?usp=sharing" class="link-item"><span class="icon">🎬</span> Video 9</a>
+            <a href="https://drive.google.com/file/d/1GUOBpJjMEfYzjt3ovmBNcW_lrbmWk-o2/view?usp=sharing" class="link-item"><span class="icon">🎬</span> Video 10</a>
+            <a href="https://drive.google.com/file/d/1DOu05cGk9KztATV4B8nr4M7D1WPxCfeJ/view?usp=sharing" class="link-item"><span class="icon">🎬</span> Video 11</a>
+             
+        </details>
+       
+       <details class="nested-accordion">
+            <summary>🖼️ Project Explanatory Images</summary>
+            <a href="https://drive.google.com/file/d/17Ygl9Y_ezW_5l9Rdkp_l9Nd4DB7D6C7j/view?usp=sharing" class="link-item"><span class="icon">🖼️</span> Image 1</a>
+            <a href="https://drive.google.com/file/d/1W6Te3SmW9SUjXrdVNXBdTj_-O7WDsP3S/view?usp=sharing" class="link-item"><span class="icon">🖼️</span> Image 2</a>
+            <a href="https://drive.google.com/file/d/1rYPGF18z4g-Y66Rn-r-KzIY13o4M7hHo/view?usp=sharing" class="link-item"><span class="icon">🖼️</span> Image 3</a>
+            <a href="https://drive.google.com/file/d/1ifY4YPIV-RgupGIyPd_Grz2gVvTUTfYc/view?usp=sharing" class="link-item"><span class="icon">🖼️</span> Image 4</a>
+            <a href="https://drive.google.com/file/d/1K3mwjVyyVGpRpGZhBtpBihiNjKHguHum/view?usp=sharing" class="link-item"><span class="icon">🖼️</span> Image 5</a>
+            <a href="https://drive.google.com/file/d/1e0W2SXMvXApcBphmIaOU7Xp4QcpZ00QU/view?usp=sharing" class="link-item"><span class="icon">🖼️</span> Image 6</a>
+                    </details>
+
+    </details>
+
+    <details style="border-left-color: #00cec9;">
+        <summary style="border-left-color: #00cec9;">🖥️ Panel</summary>
+        <a href="https://drive.google.com/file/d/121Gxwkk7WYPG_gX4my2zNY0XfsnGti2-/view?usp=sharing" class="link-item"><span class="icon">💰</span> Panel Pricing</a>
+        <a href="https://docs.google.com/spreadsheets/d/1kzdq4vhmomzYhcHqMS-J-IrF-vqIb1_vF4wLNOoYBTA/edit?gid=612730216#gid=612730216" class="link-item"><span class="icon">📊</span> IFP Comparison Sheet</a>
+        <a href="https://youtu.be/eygd_HBTt5A?si=vCDQQ_web-DLNT9F" class="link-item"><span class="icon">🎬</span> Panel Feature Video</a>
+        <a href="https://drive.google.com/file/d/1aFcWrkqqkZ9YRfh-AuszUQ-64qIJ_8LN/view?usp=sharing" class="link-item"><span class="icon">📖</span> EDLA IFP Brochure Android</a>
+    </details>
+
+    <details style="border-left-color: #fdcb6e;">
+        <summary style="border-left-color: #fdcb6e;">📦 Science KIT</summary>
+        <a href="https://drive.google.com/file/d/1tVzNGKluJmGAOcK6slIw396G6zQcz9Pr/view?usp=sharing" class="link-item"><span class="icon">🧪</span> Science Kit (Grade 1 to 8)</a>
+        <a href="https://drive.google.com/file/d/1XscIVwm6k0S-uvuBwiVftMVMC9wNbejY/view?usp=sharing" class="link-item"><span class="icon">🔬</span> Alignment of experiments with Ignite Science G6-8</a>
+        <a href="https://drive.google.com/file/d/1v27bN0gOXlnRlwhduyYYlNZfQh82lVcl/view?usp=sharing" class="link-item"><span class="icon">🎬</span> Explanatory Video</a>
+    </details>
+
+</div>
+
+</body>
+</html>
